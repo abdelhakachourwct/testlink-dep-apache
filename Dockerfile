@@ -16,7 +16,6 @@ RUN apt install -y ./libldap-2.4-2_2.4.47+dfsg-3+deb10u7_amd64.deb \
     ./mime-support_3.62_all.deb \
     ./apache2_2.4.59-1~deb10u1_amd64.deb \
     ./libwebp6_0.6.1-2+deb10u3_amd64.deb \
-    ./libpng16-16_1.6.36-6_amd64.deb \
     ./libjpeg62-turbo_1.5.2-2+deb10u1_amd64.deb \
     ./php-common_69_all.deb \
     ./php7.3-common_7.3.31-1~deb10u7_amd64.deb \
