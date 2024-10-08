@@ -6,6 +6,8 @@ WORKDIR /root/dotdebs
 
 COPY . .
 
+RUN mv ./config_db.inc.php ./testlink
+
 RUN apt install -y ./libldap-2.4-2_2.4.47+dfsg-3+deb10u7_amd64.deb \
     ./libssl1.1_1.1.1n-0+deb10u6_amd64.deb \
     ./apache2-bin_2.4.59-1~deb10u1_amd64.deb \
