@@ -19,7 +19,7 @@ define('DB_TABLE_PREFIX', '');
 ## Modification perhaps needed on the database
 - You may need to make the testlink user yourself and grant him privileges yourself and then do the installation
 
-- You may also need to change the variable sql-mode , remove `NO_ZERO_IN_DATE` and `NO_ZERO_DATE`, for the mysql database in case you get the error message with `invalid default value for end_exec_ts`.
+- You may also need to change the variable sql-mode , remove `NO_ZERO_IN_DATE` and `NO_ZERO_DATE`, for the mysql database in case you get the error message `invalid default value for end_exec_ts`.
 ## The a2start.sh script
 - The `a2start.sh` script serves as an entrypoint for the container. I made it in case of you have to modify the apache server within or make any changes that make you override the container's entrypoint. You can `docker commit` then run a new container from the resulting image with that script as an entrypoint to, kind of, revert the entrypoint to the original.
 ## Sources
