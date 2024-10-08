@@ -1,6 +1,6 @@
-#testlink v1.9.20 / apache 2.4.59
+# testlink v1.9.20 / apache 2.4.59
 
-##changes in the testlink folder
+## changes in the testlink folder
 - changes are still needed within the container. the `config_db.inc.php` file that has the database creds doesn't exist and it has to be made manually in the testlink folder since testlink itself fails to make it and write into it. will may make it done with a command in the dockerfile in the next repo commit.
 ### config_db.inc.php
 ```
@@ -15,7 +15,7 @@ define('DB_TABLE_PREFIX', '');
 ?>
 ```
 
-##Modification perhaps needed on the database
+## Modification perhaps needed on the database
 - You may need to make the testlink user yourself and grant him privileges yourself and then do the installation
 
 - You may also need to change the variable sql-mode , remove `NO_ZERO_IN_DATE` and `NO_ZERO_DATE`, for the mysql database in case you get the error message with `invalid default value for end_exec_ts`.
