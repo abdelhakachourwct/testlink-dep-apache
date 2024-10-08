@@ -1,3 +1,3 @@
 #!/bin/bash
-service mysql start
+# service mysql start
 apachectl -D FOREGROUND
