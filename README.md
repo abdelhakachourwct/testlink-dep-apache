@@ -22,6 +22,8 @@ define('DB_TABLE_PREFIX', '');
 - You may also need to change the variable sql-mode , remove `NO_ZERO_IN_DATE` and `NO_ZERO_DATE`, for the mysql database in case you get the error message `invalid default value for end_exec_ts`.
 ## The a2start.sh script
 - The `a2start.sh` script serves as an entrypoint for the container. I made it in case of you have to modify the apache server within or make any changes that make you override the container's entrypoint. You can `docker commit` then run a new container from the resulting image with that script as an entrypoint to, kind of, revert the entrypoint to the original.
+> [!NOTE]
+> Commented second line since it is not needed with this dockerfile/build and will throw an error since this build has no mysql database installed in it. Uncomment it when mysql is installed in the container either through dockerfile in first build or manually later after modifying the built container.
 ## Sources
 - [TestLink's code v1.9.20](https://github.com/TestLinkOpenSourceTRMS/testlink-code/tree/1.9.20)
 - [.deb packages](https://www.debian.org/distrib/packages#search_packages)
