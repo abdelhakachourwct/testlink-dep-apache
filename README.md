@@ -12,5 +12,5 @@
 > [!NOTE]
 > Commented second line since it is not needed with this dockerfile/build and will throw an error since this build has no mysql database installed in it. Uncomment it when mysql is installed in the container either through dockerfile in first build or manually later after modifying the built container.
 ## Sources
-- [TestLink's code v1.9.20](https://github.com/TestLinkOpenSourceTRMS/testlink-code/tree/1.9.20)
+- [TestLink's code v1.9.20 and LICENSE](https://github.com/TestLinkOpenSourceTRMS/testlink-code/tree/1.9.20)
 - [.deb packages](https://www.debian.org/distrib/packages#search_packages)
